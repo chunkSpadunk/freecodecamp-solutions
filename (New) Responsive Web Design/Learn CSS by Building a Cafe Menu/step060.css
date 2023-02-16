@@ -1,0 +1,10 @@
+/* 
+in the html file you need to add this 
+<p class="established">Est. 2020</p> searc for the established titles at the top of the html doc
+
+then add the below css rules 
+*/
+.established {
+    font-style: italic;
+}
+
