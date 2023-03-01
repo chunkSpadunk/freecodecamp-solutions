@@ -1,0 +1,8 @@
+/* do the same thing from the previous excercise and use the media rule */
+
+@media (prefers-reduced-motion: no-preference) {
+    * {
+        scroll-behavior: smooth;
+    }
+
+}
