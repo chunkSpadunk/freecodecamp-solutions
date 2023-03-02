@@ -1,0 +1,11 @@
+#black-hat {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 150px 0 0 300px;
+    /* add the below lines */
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: rgb(45, 31, 19);
+  }

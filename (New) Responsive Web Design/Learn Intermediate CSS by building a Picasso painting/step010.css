@@ -1,0 +1,9 @@
+#back-wall {
+    background-color: #8B4513;
+    width: 100%;
+    height: 60%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }

@@ -1,0 +1,9 @@
+#guitar {
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    top: 120px;
+    left: 0px;
+    /* add the below lines of code to pass the challenge*/
+    z-index: 3;
+  }

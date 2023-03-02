@@ -1,0 +1,7 @@
+#black-hat {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    /* add the below line */
+    border-width: 150px 0 0 300px;
+  }
