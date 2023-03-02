@@ -1,0 +1,9 @@
+@media (max-width: 1199px) and (min-width: 769px) {
+    .keys {
+        width: 633px;
+    }
+
+    #piano {
+        width: 675px;
+    }
+}

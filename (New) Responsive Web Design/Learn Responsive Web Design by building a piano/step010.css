@@ -1,0 +1,5 @@
+*, *::before, *::after {
+    box-sizing: inherit;
+  }
+
+  /* add the above lines of code after the html selector */
