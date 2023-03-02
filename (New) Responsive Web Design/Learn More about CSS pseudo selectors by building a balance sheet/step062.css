@@ -1,0 +1,8 @@
+
+tr.data th .description {
+    display: block;
+    font-weight: normal;
+    font-style: italic;
+    padding: 1rem 0 0.75rem;
+    margin-right: -13.5rem;
+  }
