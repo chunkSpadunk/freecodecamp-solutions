@@ -1,0 +1,9 @@
+.bb1 {
+  width: 10%;
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* change the color of the below line from #999 color to aa80ff*/
+  --building-color1: #aa80ff;
+}
