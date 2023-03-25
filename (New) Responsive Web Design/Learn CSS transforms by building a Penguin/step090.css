@@ -1,0 +1,12 @@
+.arm.left {
+	top: 35%;
+	left: 5%;
+	transform-origin: top left;
+}
+
+/* replace this portion of the css rules to overwrite the previously written rules */
+
+.arm.right {
+	top: 0%;
+	right: -5%;
+}
