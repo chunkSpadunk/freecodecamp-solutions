@@ -1,3 +1,5 @@
-let myString = "Hello, World!";
+let myString =
+	"Hello, World! true if a particular string is present and false if not";
 let myRegex = /Hello/;
-let result = myRegex; // Change this line
+let result = myRegex.test(myString); // change this line
+console.log(result);
