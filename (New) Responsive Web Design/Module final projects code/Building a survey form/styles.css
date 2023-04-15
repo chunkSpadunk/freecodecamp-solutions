@@ -25,11 +25,53 @@ body::before {
     background-position: center;
 }
 
+#centermessage {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+}
+
+#centermessage {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
 .alert {
     padding: 20px;
     background-color: #f44336; /* Red */
     color: white;
     margin-bottom: 15px;
+}
+
+#showAndHide {
+    width: 100%;
+    padding: 50px 0;
+    text-align: center;
+    background-color: var(--color-darkblue-alpha);
+    margin-top: 20px;
+}
+
+.secondclosebutton:hover {
+    color: black;
+}
+
+.secondclosebutton {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#secondelement {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
 }
 
 /* The close button */
