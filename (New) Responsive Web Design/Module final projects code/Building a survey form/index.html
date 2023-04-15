@@ -21,21 +21,72 @@
      -->
     <body>
         <h1>this section will show some custom alert messages</h1>
-        <p>click on the x symbol to close the alert message</p>
-        <div class="alert">
-            <span
-                class="closebutton"
-                onclick="this.parentElement.style.display
-                ='none'
-                ;"
-                >&times;
-                <!-- this is the character encoding for the x symbol-->
-            </span>
-            <strong id="strongtarget">Danger!</strong>
-            <p id="alertmessage">
-                This indicates a dangerous or potentially negative action
-            </p>
+        <button
+            id="centermessage"
+            onclick="myFunction()">
+            Try this for some change
+        </button>
+        <script>
+            function myFunction() {
+                window.alert(
+                    "Hi I am an alert message box and follow the steps below to see some changes in this project"
+                );
+            }
+        </script>
+        <p id="centermessage">
+            click on the button to close this alert message banner
+        </p>
+        <button
+            id="centermessage"
+            onclick="myFunctionThree()">
+            Try it
+        </button>
+        <div id="secondshowAndHide">
+            <div class="alert">
+                <p id="centermessage">
+                    this element will show and hide as you toggle the button
+                    above click on the toggle button
+                </p>
+                <strong id="strongtarget">Danger!</strong>
+                <p id="alertmessage">
+                    This indicates a dangerous or potentially negative action
+                </p>
+            </div>
         </div>
+        <p id="centermessage">
+            haha kidding don't worry but after you have closed that button click
+            the try it button to toggle between hiding and showing the alert
+            message
+        </p>
+        <button
+            id="centermessage"
+            onclick="myFunctionTwo()">
+            Try it
+        </button>
+        <div id="showAndHide">this element will show and hide.</div>
+        <script>
+            function myFunctionTwo() {
+                var showHide = document.getElementById("showAndHide");
+
+                if (showHide.style.display === "none") {
+                    showHide.style.display = "block";
+                } else {
+                    showHide.style.display = "none";
+                }
+            }
+        </script>
+        <script>
+            function myFunctionThree() {
+                var showHide = document.getElementById("secondshowAndHide");
+
+                if (showHide.style.display === "none") {
+                    showHide.style.display = "block";
+                } else {
+                    showHide.style.display = "none";
+                }
+            }
+        </script>
+        <!-- just for space-->
         <div class="container">
             <header class="header">
                 <h1
