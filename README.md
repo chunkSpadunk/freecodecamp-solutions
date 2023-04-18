@@ -17,7 +17,7 @@ Below is a list of software and tools I would recommend to install to start your
 and that is all that you need to start
 ## Instructions for installing software to get started
 ### 1. Visual Studio Code
-> the follwing will contain all the steps to help new comers to install vscode
+> the following will contain all the steps to help new comers to install vscode
 
 ### Vscode installation for Mac OS
 
