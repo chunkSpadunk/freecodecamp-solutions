@@ -1,1 +1,7 @@
-let yourArray = [1, 2, 3, "this is the string", false]; // Change this line
+let yourArray = [
+    "this is the string",
+    true,
+    15,
+    "this is another string",
+    false,
+]; // Change this line
