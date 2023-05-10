@@ -1,11 +1,9 @@
 function factorialize(num) {
-    var factorial = 1;
-    for (let i = 2; i <= num; i++) {
-        factorial = factorial * i;
+    let result = 1;
+    for (let i = 1; i <= num; i++) {
+        result = result * i;
     }
-    return factorial;
-  }
-  
-  console.log(factorialize(5));
+    return result;
+}
 
-  // the code is working and this is the end of the code control instruction syntax
+console.log(factorialize(5));
