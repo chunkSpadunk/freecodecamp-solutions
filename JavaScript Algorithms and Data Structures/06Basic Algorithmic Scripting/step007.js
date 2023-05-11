@@ -1,12 +1,25 @@
+// function repeatStringNumTimes(str, num) {
+//     if (num < 1) {
+//         return "";
+//     } else if (num === 1) {
+//         return str;
+//     } else {
+//         return str + repeatStringNumTimes(str, num - 1);
+//     }
+// }
+
+// console.log(repeatStringNumTimes("abc", 3));
 function repeatStringNumTimes(str, num) {
-  let mainString = "";
-  for (let i = 0; i < num; i++) {
-    mainString = mainString + str;
-  }
-  return mainString;
+    var repeatString = "";
+    if (num < 0) {
+        return repeatString;
+    }
+
+    while (num > 0) {
+        repeatString += str;
+        num--;
+    }
+    return repeatString;
 }
 
-repeatStringNumTimes("abc", 3);
-
-// for the purpose of this challenge do not use the built-in .repeat() method
-// we need to store the string for the operation in a separate string variable n
+console.log(repeatStringNumTimes("abc", 3));
