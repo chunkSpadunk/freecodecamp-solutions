@@ -1,7 +1,10 @@
+// instanceof allows to compare an object to a constructor
+
 function House(numBedrooms) {
     this.numBedrooms = numBedrooms;
 }
 
-// only change the code below this line
+// Only change code below this line
+
 let myHouse = new House(4);
-myHouse instanceof House;
+console.log(myHouse instanceof House);

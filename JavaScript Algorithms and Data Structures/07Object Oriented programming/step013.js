@@ -3,12 +3,12 @@ function Dog(name) {
 }
 
 Dog.prototype = {
-    // Only change code below this line
-    numLegs: 2,
+    // Only change the code below this line
     eat: function () {
-        console.log("nom nom nom");
+        console.log("this is the dog eatting");
     },
     describe: function () {
-        console.log("My name is " + this.name);
+        console.log("this will be used to describe the dog");
     },
+    numLegs: 2,
 };
