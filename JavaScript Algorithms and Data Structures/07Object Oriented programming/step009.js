@@ -5,11 +5,11 @@ function Bird(name) {
 
 let canary = new Bird("Tweety");
 let ownProps = [];
-// only change the code below this line
+// Only change code below this line
 for (let property in canary) {
     if (canary.hasOwnProperty(property)) {
         ownProps.push(property);
     }
 }
 
-console.log(ownProps);
+console.log(ownProps); // this will return all the objects in the Bird constructor as a list in ownprops

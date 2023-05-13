@@ -4,7 +4,7 @@ function Dog(name, color) {
     this.numLegs = 4;
 }
 
-let terrier = new Dog("passing name here", "passing color here");
-console.log(terrier);
-
-// the code is working and this is the end of the code control instruction syntax
+let terrier = new Dog(
+    "this is the name of the dog",
+    "this is the color of the dog"
+);
