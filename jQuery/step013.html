@@ -1,12 +1,16 @@
 <script>
     $(document).ready(function () {
-        $("button").addClass("animated bounce");
-        $(".well").addClass("animated shake");
-        $("#target3").addClass("animated fadeOut");
+        $("#target1").css("color", "red");
+        $("#target1").prop("disabled", true);
+        $("#target4").remove();
+        $("#target2").appendTo("#right-well");
+        $("#target5").clone().appendTo("#left-well");
+        $("#target1").parent().css("background-color", "red");
+        $("#right-well").children().css("color", "orange");
     });
 </script>
 
-<!-- Only change code above this line -->
+<!-- Only change code above this line. -->
 
 <div class="container-fluid">
     <h3 class="text-primary text-center">jQuery Playground</h3>
