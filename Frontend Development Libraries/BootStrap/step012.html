@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            http-equiv="X-UA-Compatible"
+            content="IE=edge" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0" />
+        <title>This is for understanding how bootstrap will work</title>
+        <link
+            href="https://fonts.googleapis.com/css?family=Lobster"
+            rel="stylesheet"
+            type="text/css" />
+        <link
+            rel="stylesheet"
+            href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+            integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+            crossorigin="anonymous" />
+        <link
+            rel="stylesheet"
+            href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+            integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+            crossorigin="anonymous" />
+        <style>
+            h2 {
+                font-family: Lobster, Monospace;
+            }
+
+            .thick-green-border {
+                border-color: green;
+                border-width: 10px;
+                border-style: solid;
+                border-radius: 50%;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="container-fluid">
+            <h1 id="mainheading">
+                This is the main heading of this application
+            </h1>
+            <div class="row">
+                <div class="col-xs-8">
+                    <h2 class="text-primary">CatPhotoApp</h2>
+                </div>
+                <div class="col-xs-4">
+                    <a href="#">
+                        <img
+                            class="img-responsive thick-green-border"
+                            src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg"
+                            alt="A cute orange cat lying on its back." />
+                    </a>
+                </div>
+            </div>
+
+            <p>Click here for <a href="#">cat photos</a>.</p>
+
+            <a href="#">
+                <img
+                    class="img-responsive"
+                    src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/running-cats.jpg"
+                    alt="this is another image below the first cat phot pic" />
+                <div class="row">
+                    <div class="col-xs-4">
+                        <button class="btn btn-primary btn-block">
+                            <!-- the button is required to be directly below the image of the second cat photo-->
+                            Like <i class="fas fa-thumbs-up"></i>
+                        </button>
+                    </div>
+                    <div class="col-xs-4">
+                        <button class="btn btn-primary btn-block btn-info">
+                            <!-- this bootstrap button info class added -->
+                            Info
+                        </button>
+                    </div>
+                    <div class="col-xs-4">
+                        <button
+                            class="btn btn-primary btn-block btn-info btn-danger">
+                            <!-- here bootstrap button danger class is added for CTA-->
+                            Delete
+                        </button>
+                    </div>
+                </div>
+            </a>
+
+            <p>Things cats <span class="text-danger">love</span></p>
+            <ul>
+                <li>cat nip</li>
+                <li>laser pointers</li>
+                <li>lasagna</li>
+            </ul>
+            <p>Top 3 things cats <span class="text-danger">hate:</span></p>
+            <ol>
+                <li>flea treatment</li>
+                <li>thunder</li>
+                <li>other cats</li>
+            </ol>
+            <form action="https://freecatphotoapp.com/submit-cat-photo">
+                <label>
+                    <input
+                        type="radio"
+                        name="indoor-outdoor" />
+                    Indoor
+                </label>
+                <label>
+                    <input
+                        type="radio"
+                        name="indoor-outdoor" />
+                    Outdoor
+                </label>
+                <label>
+                    <input
+                        type="checkbox"
+                        name="personality" />
+                    Loving
+                </label>
+                <label>
+                    <input
+                        type="checkbox"
+                        name="personality" />
+                    Lazy
+                </label>
+                <label>
+                    <input
+                        type="checkbox"
+                        name="personality" />
+                    Crazy
+                </label>
+                <input
+                    type="text"
+                    placeholder="cat photo URL"
+                    required />
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </body>
+</html>
