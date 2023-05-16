@@ -10,6 +10,9 @@ function diffArray(firstArray, secondArray) {
             }
         }
     }
+    function appMain(thisFirstArray, thisSecondArray) {
+        // this will set all the main statements of this array in the same file of this setting that we will be using for the rest of the main sytnax all this while
+    }
     onlyInFirst(firstArray, secondArray);
     onlyInFirst(secondArray, firstArray);
     return newArray;
