@@ -1,6 +1,6 @@
 // here we will be running all the code challenges for react freecodecamp
 
-const JSX = <h1>Hello JSX!</h1>
+const JSX = <h1>Hello JSX!</h1>;
 
 /*
 
@@ -17,8 +17,6 @@ useReducer - Creates a useReducer hook.
 rconst - Creates a constructor for a class component.
 rcfe - Creates a functional component with an ES6 export statement.
 redux - Creates a Redux-connected component.
-
-
 
 
 */
