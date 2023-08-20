@@ -1,0 +1,3 @@
+cd freeCodeCamp
+pwd
+ls
