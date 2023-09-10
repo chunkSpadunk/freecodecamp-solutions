@@ -1,0 +1,433 @@
+the first line will be the name of the topic of the challenge and the 2nd line will the question and the 3rd line will contain the problem description or code if any is provided and the 4rth line will be the answer
+
+Introduction: Why Program?
+Who should learn to program?
+everyone
+
+Introduction: Hardware Architecture
+Where are your programs stored when they are running?
+Memory
+
+Introduction: Python as a Language
+What will print out after running these two lines of code:
+x = 6
+print(x)
+6
+
+Introduction: Elements of Python
+What will the following program print out:
+x = 43
+x = x + 1
+print(x)
+44
+
+
+Variables, Expressions, and Statements
+What is the symbol used in an assignment statement?
+=
+
+
+Intermediate Expressions
+What will print out after running this code:
+width = 15
+height = 12.0
+print(height/3)
+4.0
+
+
+Conditional Execution
+Which code is indented correctly to print "Yes" if x = 0 and y = 10?
+if 0 == x:
+    if y == 10:
+        print("Yes")
+
+
+More Conditional Structures
+Given the following code:
+temp = "5 degrees"
+cel = 0
+fahr = float(temp)
+cel = (fahr - 32.0) * 5.0 / 9.0
+print(cel)
+Which line/lines should be surrounded by try block?
+3,4
+
+
+Python Functions
+What is the purpose of the "def" keyword in Python?
+It indicates the start of a function, and the following indented section of code is to be stored for later.
+
+
+Build your own Functions
+What will the following Python program print out?:
+def fred():
+    print("Zap")
+def jane():
+    print("ABC")
+
+jane()
+fred()
+jane()
+ABC
+Zap
+ABC
+
+
+Loops and Iterations
+What will the following code print out?:
+n = 0
+while True:
+    if n == 3:
+        break
+    print(n)s
+    n = n + 1
+0
+1
+2
+
+
+Iterations: Definite Loops
+How many lines will the following code print?:
+for i in [2,1,5]:
+    print(i)
+3
+
+
+Iterations: Loop Idioms
+Below is code to find the smallest value from a list of values. One line has an error that will cause the code to not work as expected. Which line is it?:
+smallest = None
+print("Before:", smallest)
+for itervar in [3, 41, 12, 9, 74, 15]:
+    if smallest is None or itervar < smallest:
+        smallest = itervar
+        break
+    print("Loop:", itervar, smallest)
+print("Smallest:", smallest)
+6
+
+
+Iterations: More Patterns
+Which of these evaluates to False?
+0 is 0.0
+
+
+Strings in Python
+What will the following code print?:
+for n in "banana":
+    print(n)
+b
+a
+n
+a
+n
+a
+
+
+Intermediate Strings
+What is the value of i in the following code?
+word = "bananana"
+i = word.find("na")
+2
+
+
+Reading Files
+What is used to indicate a new line in a string?
+\n
+
+
+Files as a Sequence
+What does the word 'continue' do in the middle of a loop?
+skips to the next iteration to the Loop
+
+
+Python Lists
+What is the value of x after running this code:
+fruit = "banana"
+x = fruit[1]
+a
+
+
+Working with Lists
+Which method is used to add an item at the end of a list?
+append
+
+
+Strings and Lists
+What does n equal in this code?
+words = 'His e-mail is q-lar@freecodecamp.org'
+pieces = words.split()
+parts = pieces[3].split('-')
+n = parts[1]
+lar@freecodecamp.org
+
+
+Python Dictionaries
+What does dict equal after running this code?:
+dict = {"Fri": 20, "Thu": 6, "Sat": 1}
+dict["Thu"] = 13
+dict["Sat"] = 2
+dict["Sun"] = 9
+{'Fri': 20, 'Thu': 13, 'Sat': 2, 'Sun': 9}
+
+
+Dictionaries: Common Applications
+What will the following code print?
+counts = { 'quincy' : 1 , 'mrugesh' : 42, 'beau': 100, '0': 10}
+print(counts.get('kris', 0))
+0
+
+
+Dictionaries and Loops
+What will the following code print?:
+counts = { 'chuck' : 1 , 'annie' : 42, 'jan': 100}
+for key in counts:
+    if counts[key] > 10:
+        print(key, counts[key])
+annie 42
+jan 100
+
+
+The Tuples Collection
+What will the following code print?:
+d = dict()
+d['quincy'] = 1
+d['beau'] = 5
+d['kris'] = 9
+for (k,i) in d.items():
+    print(k, i)
+quincy 1
+beau 5
+kris 9
+
+
+Comparing and Sorting Tuples
+Which does the same thing as the following code?:
+lst = []
+for key, val in counts.items():
+    newtup = (val, key)
+    lst.append(newtup)
+lst = sorted(lst, reverse=True)
+print(lst)
+print( sorted( [ (v,k) for k,v in counts.items() ], reverse=True ) )
+
+
+Regular Expressions
+Which regex matches only a white space character?
+\s
+
+
+Regular Expressions: Matching and Extracting Data
+What will the following program print?:
+import re
+s = 'A message from csev@umich.edu to cwen@iupui.edu about meeting @2PM'
+lst = re.findall('\\S+@\\S+', s)
+print(lst)
+['csev@umich.edu', 'cwen@iupui.edu']
+
+
+Regular Expressions: Practical Applications
+What will search for a "$" in a regular expression?
+\$
+
+
+Networking with Python
+What Python library gives access to TCP Sockets?
+Sockets
+
+
+Networking Protocol
+What type of HTTP request is usually used to access a website?
+GET
+
+
+Networking: Write a Web Browser
+What does the following code create?:
+import socket
+
+mysock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+mysock.connect(('data.pr4e.org', 80))
+cmd = 'GET http://data.pr4e.org/romeo.txt HTTP/1.0\r\n\r\n'.encode()
+mysock.send(cmd)
+
+while True:
+    data = mysock.recv(512)
+    if len(data) < 1:
+        break
+    print(data.decode(),end='')
+mysock.close()
+A simple web browser
+
+
+Networking: Text Processing
+Which type of encoding do most websites use?
+UTF-8
+
+
+Networking: Using urllib in Python
+What will the output of the following code be like?:
+import urllib.request
+fhand = urllib.request.urlopen('http://data.pr4e.org/romeo.txt')
+for line in fhand:
+    print(line.decode().strip())
+Just contents of "romeo.txt".
+
+
+Networking: Web Scraping with Python
+What Python library is used for parsing HTML documents and extracting data from HTML documents?
+BeautifulSoup
+
+
+Using Web Services
+What are the two most common ways to send data over the internet?
+JSON and XML
+
+
+Web Services: XML
+What is wrong with the following XML?
+<person>
+  <name>Chuck</name>
+  <phone type="intl">
+    +1 734 303 4456
+  <email hide="yes" />
+</person>
+Phone tag is missing closing tag.
+
+
+Web Services: XML Schema
+What is XSD?
+The W3C Schema specification for XML.
+
+
+Web Services: JSON
+What will the following code print?:
+import json
+data = '''
+  [
+    { "id" : "001",
+      "x" : "2",
+     "name" : "Quincy"
+    } ,
+    { "id" : "009",
+      "x" : "7",
+      "name" : "Mrugesh"
+    }
+  ]
+'''
+info = json.loads(data)
+print(info[1]['name'])
+Mrugesh
+
+
+Web Services: Service Oriented Approach
+With a services oriented approach to developing web apps, where is the data located?
+Spread across many computer systems connected via the internet or internal network.
+
+
+Web Services: APIs
+What does API stand for?
+Application Program Interface
+
+
+Web Services: API Rate Limiting and Security
+When making a request from the Twitter API, what information must always be sent with the request?
+key
+
+
+Python Objects
+Which is NOT true about objects in Python?
+Objects are one of the five standard data types.
+
+
+Objects: A Sample Class
+What will the following program print?:
+class PartyAnimal:
+    x = 0
+    def party(self):
+        self.x = self.x + 2
+        print(self.x)
+
+an = PartyAnimal()
+an.party()
+an.party()
+2
+4
+
+
+Object Lifecycle
+What will the following program print?:
+class PartyAnimal:
+    x = 0
+    name = ''
+    def __init__(self, nam):
+        self.name = nam
+        print(self.name,'constructed')
+    def party(self):
+        self.x = self.x + 1
+        print(self.name,'party count',self.x)
+
+q = PartyAnimal('Quincy')
+m = PartyAnimal('Miya')
+
+q.party()
+m.party()
+q.party()
+Quincy constructed
+Miya constructed
+Quincy party count 1
+Miya party count 1
+Quincy party count 2
+
+
+Objects: Inheritance
+What is inheritance in object-oriented programming?
+The ability to create a new class by extending an existing class.
+
+
+Relational Databases and SQLite
+Which is NOT a primary data structure in a database?
+index
+
+
+Make a Relational Database
+What SQL command would you use to retrieve all users that have the email address quincy@freecodecamp.org?
+SELECT * FROM Users WHERE email="quincy@freecodecamp.org"
+
+
+Relational Database Design
+What is the best practice for how many times a piece of string data should be stored in a database?
+1
+
+
+Representing Relationships in a Relational Database
+What is a foreign key?
+A number that points to the primary key of an associated row in a different table.
+
+
+Relational Databases: Relationship Buildingz
+What does the INSERT command do in SQL?
+It defines a new row by listing the fields we want to include followed by the values we want placed in the new row.
+
+
+Relational Databases: Join Operation
+When using a JOIN clause in an SQL statement, what does ON do?
+It indicates how the two tables are to be joined.
+
+
+Relational Databases: Many-to-many Relationships
+Which is an example of a many-to-many relationship?
+teacher to student
+
+
+Visualizing Data with Python
+Most data needs to be ______ before using it.
+cleaned
+
+
+Data Visualization: Page Rank
+How does the PageRank algorithm work?
+It determines which pages are most highly connected.
+
+
+Data Visualization: Mailing Lists
+Which is a common JavaScript visualization library?
+D3
