@@ -176,3 +176,93 @@ s = pd.Series([np.nan, 1, 2, np.nan, 3])
 s = s.fillna(method='ffill')
 
 print(s)
+0    NaN
+1    1.0
+2    2.0
+3    2.0
+4    3.0
+dtype: float64
+
+
+Data Cleaning Duplicates
+The Python method .duplicated() returns a boolean Series for your DataFrame. True is the return value for rows that:
+contain a duplicate, where the value for the row is at least the second occurrence of that value.
+
+
+Data Cleaning and Visualizations
+When using Matplotlib's global API, what does the order of numbers mean here?
+plt.subplot(1, 2, 1)
+My figure will have one row, two columns, and I am going to start drawing in the first (left) plot.
+
+
+Reading Data Introduction
+Given a file named certificates.csv with these contents:
+
+Name$Certificates$Time (in months)
+Tom$8$16
+Kris$2$5
+Ahmad$5$9
+Beau$6$12
+Fill in the blanks for the missing arguments below:
+
+
+Instead of using notebooks.ai like it shows in the video, you can use Google Colab instead.
+
+More resources:
+
+Notebooks on GitHub
+How to open Notebooks from GitHub using Google Colab.
+Given a file named certificates.csv with these contents:
+
+Name$Certificates$Time (in months)
+Tom$8$16
+Kris$2$5
+Ahmad$5$9
+Beau$6$12
+Fill in the blanks for the missing arguments below:
+
+import csv
+
+with open(__A__, 'r') as fp:
+    reader = csv.reader(fp, delimiter=__B__)
+    next(reader)
+    for index, values in enumerate(reader):
+        name, certs_num, months_num = values
+        print(f"{name} earned {__C__} certificates in {months_num} months")
+A: 'certificates.csv'
+B: '$'
+C: certs_num
+
+
+Reading Data CSV and TXT
+How would you import the CSV file data.csv and store it in a DataFrame using the Pandas module?
+import pandas as pd
+df = pd.read_csv("data.csv")
+
+
+Reading Data from Databases
+What method does a Cursor instance have and what does it allow?
+The Cursor instance has an .execute() method which will receive SQL parameters to run against the database.
+
+
+Parsing HTML and Saving Data
+What Python library has the .read_html() method we can use for parsing HTML documents and extracting tables?
+Pandas
+
+
+Python Introduction
+How do we define blocks of code in the body of functions in Python?
+We use indentation, usually right-aligned 4 spaces.
+
+
+Python Functions and Collections
+What is the main difference between lists and tuples in Python?
+Tuples are immutable.
+
+
+Python Iteration and Modules
+How would you iterate over and print the keys and values of a dictionary named user?
+for key, value in user.items():
+    print(key, value)
+
+

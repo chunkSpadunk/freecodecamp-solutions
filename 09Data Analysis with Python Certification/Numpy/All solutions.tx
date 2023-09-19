@@ -1,0 +1,99 @@
+the first line will be the name of the topic of the challenge and the 2nd line will the question and the 3rd line will contain the problem description or code if any is provided and the 4rth line will be the answer
+
+
+What is NumPy
+Why are Numpy arrays faster than regular Python lists?
+All of the above.
+
+
+Basics of Numpy
+What will the following code print?
+b = np.array([[1.0,2.0,3.0],[3.0,4.0,5.0]])
+print(b)
+[[1. 2. 3.]
+[3. 4. 5.]]
+
+
+Accessing and Changing Elements, Rows, Columns
+What code would change the values in the 3rd column of both of the following Numpy arrays to 20?
+a = np.array([[1, 2, 3, 4, 5], [6, 7, 8, 9, 10]])
+
+# Output:
+# [[ 1  2  20  4  5]
+# [ 6  7 20  9 10]]
+a[:, 2] = 20
+
+
+Initializing Different Arrays
+What will the following code print?
+a = np.array([[1, 2, 3, 4, 5], [6, 7, 8, 9, 10]])
+
+print(np.full_like(a, 100))
+[[100 100 100 100 100]
+[100 100 100 100 100]]
+
+
+Initialize Array problem
+What is another way to produce the following array?
+[[0. 0. 0. 0. 0. 0. 0.]
+[0. 1. 1. 1. 1. 1. 0.]
+[0. 1. 1. 1. 1. 1. 0.]
+[0. 1. 1. 5. 1. 1. 0.]
+[0. 1. 1. 1. 1. 1. 0.]
+[0. 1. 1. 1. 1. 1. 0.]
+[0. 0. 0. 0. 0. 0. 0.]]
+output = np.zeros((7,7))
+
+z = np.ones((5, 5))
+z[2, 2] = 5
+
+output[1:-1, 1:-1] = z
+
+
+Copying Arrays Warning
+What is the value of a after running the following code?
+import numpy as np
+
+a = np.array([1, 2, 3, 4, 5])
+b = a
+b[2] = 20
+answer:
+[1 2 20 4 5]
+
+
+Mathematics
+What is the value of b after running the following code?
+import numpy as np
+
+a = np.array(([1, 2, 3, 4, 5], [6, 7, 8, 9, 10]))
+b = np.max(a, axis=1).sum()
+answer:
+15
+
+
+Reorganizing Arrays
+What code would produce the following array?
+
+[[1. 1.]
+[1. 1.]
+[1. 1.]
+[1. 1.]]
+answer:
+a = np.ones((2, 4))
+b = a.reshape((4, 2))
+print(b)
+
+
+Loading Data and Advanced Indexing
+Given a file named data.txt with these contents:
+
+29,97,32,100,45
+15,88,5,75,22
+What code would produce the following array?
+
+[29. 32. 45. 15.  5. 22.]
+answer:
+filedata = np.genfromtxt('data.txt', delimiter=',')
+output = filedata[filedata < 50]
+
+print(output)
