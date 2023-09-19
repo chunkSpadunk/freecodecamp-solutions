@@ -1,0 +1,9 @@
+upon starting this project to use react 18 there was a problem with one of the test cases 
+the issue is highlighted here
+https://github.com/freeCodeCamp/freeCodeCamp/issues/45922
+
+the solution is to downgrade to react 17 but this causes conflict with the other dependencies which by default are configured to work with the latest versions of react that are installed when we run the command npx create-react-app my-app
+So, for now I will be using vanilla JS to finish this project and will come back to finish this project in react later
+
+All the first iteration of these projects will be done in vanilla JS for now after the test case bugs get fixed I will be redoing these projects in react and may include solutions for other frameworks and libraries as well.
+
