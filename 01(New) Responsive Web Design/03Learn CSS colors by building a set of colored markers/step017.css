@@ -1,5 +1,5 @@
 .marker {
     width: 200px;
     height: 25px;
-    margin: 10px auto; /* just remove the background-color: rule from the css sheet to pass the challenge */
+    margin: 10px auto; /* just remove the background-color: rule from the css sheet to pass the challenge and also delete this comment otherwise the challenge will not pass */
   }
