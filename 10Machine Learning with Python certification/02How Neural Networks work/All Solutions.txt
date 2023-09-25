@@ -1,0 +1,19 @@
+the first line will be the name of the topic of the challenge and the 2nd line will the question and the 3rd line will contain the problem description or code if any is provided and the 4rth line will be the answer
+
+
+How Deep Neural Networks Work
+Why is it better to calculate the gradient (slope) directly rather than numerically?
+It is computationally expensive to go back through the entire neural network and adjust the weights for each layer of the neural network.
+
+
+Recurrent Neural Networks RNN and Long Short Term Memory LSTM
+What are the main neural network components that make up a Long Short Term Memory network?
+Prediction, ignoring, forgetting, and selection.
+
+
+Deep Learning Demystified
+How should you assign weights to input neurons before training your network for the first time?
+Completely randomly.
+
+
+
