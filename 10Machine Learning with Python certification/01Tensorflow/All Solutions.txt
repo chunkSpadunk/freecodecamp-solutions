@@ -1,0 +1,236 @@
+the first line will be the name of the topic of the challenge and the 2nd line will the question and the 3rd line will contain the problem description or code if any is provided and the 4rth line will be the answer
+
+
+Introduction: Machine Learning Fundamentals
+Which statement below is false?
+answer:
+Neural networks are modeled after the way the human brain works.
+
+
+Introduction to TensorFlow
+Which of the following is not a type of tensor?
+answer:
+Flowing
+
+
+Core Learning Algorithms
+Which type of analysis would be best suited for the following problem?:
+
+You have the average temperature in the month of March for the last 100 years. Using this data, you want to predict the average temperature in the month of March 5 years from now.
+answer:
+Linear regression
+
+
+Core Learning Algorithms: Working with Data
+What does the pandas .head() function do?
+By default, shows the first five rows or entries in a data frame.
+
+
+Core Learning Algorithms: Training and Testing Data
+What is categorical data?
+Any data that is not numeric.
+
+
+Core Learning Algorithms: The Training Process
+What are epochs?
+The number of times the model will see the same data.
+
+
+Core Learning Algorithms: Classification
+What is classification?
+The process of separating data points into different classes.
+
+
+Core Learning Algorithms: Building the Model
+What kind of estimator/model does TensorFlow recommend using for classification?
+DNNClassifier
+
+
+Core Learning Algorithms: Clustering
+Which of the following steps is not part of the K-Means algorithm?
+Shuffle the K points so they're redistributed randomly.
+
+
+Core Learning Algorithms: Hidden Markov Models
+What makes a Hidden Markov model different than linear regression or classification?
+It uses probability distributions to predict future events or states.
+
+
+Core Learning Algorithms: Using Probabilities to make Predictions
+What TensorFlow module should you import to implement .HiddenMarkovModel()?
+tensorflow_probability
+
+
+Neural Networks with TensorFlow
+A densely connected neural network is one in which...:
+all the neurons in the current layer are connected to every neuron in the previous layer.
+
+
+Neural Networks: Activation Functions
+Which activation function squishes values between -1 and 1?
+Tanh (Hyperbolic Tangent)
+
+
+Neural Networks: Optimizers
+What is an optimizer function?
+A function that implements the gradient descent and backpropagation algorithms for you.
+
+
+Neural Networks: Creating a Model
+Fill in the blanks below to build a sequential model of dense layers:
+
+model = __A__.__B__([
+    __A__.layers.Flatten(input_shape=(28, 28)),
+    __A__.layers.__C__(128, activation='relu'),
+    __A__.layers.__C__(10, activation='softmax')
+])
+A: keras
+B: Sequential
+C: Dense
+
+
+Convolutional Neural Networks
+Dense neural networks analyze input on a global scale and recognize patterns in specific areas. Convolutional neural networks...:
+scan through the entire input a little at a time and learn local patterns.
+
+
+Convolutional Neural Networks: The Convolutional Layer
+What are the three main properties of each convolutional layer
+Input size, the number of filters, and the sample size of the filters.
+
+
+Creating a Convolutional Neural Network
+Fill in the blanks below to complete the architecture for a convolutional neural network:
+
+model = models.__A__()
+model.add(layers.__B__(32, (3, 3), activation='relu', input_shape=(32, 32, 3)))
+model.add(layers.__C__(2, 2))
+model.add(layers.__B__(64, (3, 3), activation='relu'))
+model.add(layers.__C__(2, 2))
+model.add(layers.__B__(32, (3, 3), activation='relu'))
+model.add(layers.__C__(2, 2))
+A: Sequential
+B: Conv2D
+C: MaxPooling2D
+
+
+Convolutional Neural Networks: Evaluating the Model
+What is not a good way to increase the accuracy of a convolutional neural network?
+Using your test data to retrain the model.
+
+
+Convolutional Neural Networks: Picking a Pretrained Model
+Fill in the blanks below to use Google's pre-trained MobileNet V2 model as a base for a convolutional neural network:
+
+base_model = tf.__A__.applications.__B__(input_shape=(160, 160, 3),
+                                               include_top=__C__,
+                                               weights='imagenet'
+                                               )
+A: keras
+B: MobileNetV2
+C: False
+
+
+Natural Language Processing With RNNs
+Natural Language Processing is a branch of artificial intelligence that...:
+deals with how computers understand and process natural/human languages.
+
+
+Natural Language Processing With RNNs: Part 2
+Word embeddings are...:
+a vectorized representation of words in a given document that places words with similar meanings near each other.
+
+
+Natural Language Processing With RNNs: Recurring Neural Networks
+What is true about Recurrent Neural Networks?
+4: Both 2 and 3.
+
+
+Natural Language Processing With RNNs: Sentiment Analysis
+Fill in the blanks below to create the model for the RNN:
+
+model = __A__.keras.Sequential([
+    __A__.keras.layers.__B__(88584, 32),
+    __A__.keras.layers.__C__(32),
+    __A__.keras.layers.Dense(1, activation='sigmoid')
+])
+A: tf
+B: Embedding
+C: LSTM
+
+
+Natural Language Processing With RNNs: Making Predictions
+Before you make a prediction with your own review, you should...:
+use the encodings from the training dataset to encode your review.
+
+
+Natural Language Processing With RNNs: Create a Play Generator
+Fill in the blanks below to create the training examples for the RNN:
+
+char_dataset = tf.data.__A__.__B__(text_as_int)
+A: Dataset
+B: from_tensor_slices
+
+
+Natural Language Processing With RNNs: Building the Model
+Fill in the blanks below to complete the build_model function:
+
+def build_mode(vocab_size, embedding_dim, rnn_units, batch_size):
+    model = tf.keras.Sequential([
+        tf.keras.layers.Embedding(vocab_size,
+                                  embedding_dim,
+                                  batch_input_shape=[batch_size, None]),
+        tf.keras.layers.__A__(rnn_units,
+                              return_sequences=__B__,
+                              recurrent_initializer='glorot_uniform),
+        tf.keras.layers.Dense(__C__)
+    ])
+    __D__
+A: LSTM
+B: True
+C: vocab_size
+D: return model
+
+
+Natural Language Processing With RNNs: Training the Model
+Fill in the blanks below to save your model's checkpoints in the ./checkpoints directory and call the latest checkpoint for training:
+
+checkpoint_dir = __A__
+checkpoint_prefix = os.path.join(checkpoint_dir, 'ckpt_{epoch}')
+
+checkpoint_callback = tf.keras.callbacks.__B__(
+    filepath=checkpoint_prefix,
+    save_weights_only=True
+)
+
+history = model.fit(data, epochs=2, callbacks=[__C__])
+A: './checkpoints'
+B: ModelCheckpoint
+C: checkpoint_callback
+
+
+Reinforcement Learning With Q-Learning
+The key components of reinforcement learning are...
+environment, agent, state, action, and reward.
+
+
+Reinforcement Learning With Q-Learning: Part 2
+What can happen if the agent does not have a good balance of taking random actions and using learned actions?
+The agent will always try to maximize its reward for the current state/action, leading to local maxima.
+
+
+Reinforcement Learning With Q-Learning: Example
+Fill in the blanks to complete the following Q-Learning equation:
+
+Q[__A__, __B__] = Q[__A__, __B__] + LEARNING_RATE * (reward + GAMMA * np.max(Q[__C__, :]) - Q[__A__, __B__])
+A: state
+B: action
+C: next_state
+
+
+Conclusion
+Most people that are experts in AI or machine learning usually...:
+have one specialization.
+
+
+
