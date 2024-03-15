@@ -18,3 +18,4 @@ const monsterName = document.querySelector('#monsterName');
 const monsterHealthText = document.querySelector('#monsterHealth');
 
 // this will be worked on later and will be used a temp commit for tracking progess now
+// temp commit for working on this file later
