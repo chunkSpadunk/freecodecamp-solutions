@@ -1,8 +1,8 @@
 const JSX = (
-    <div>
-        <h1>Hello World</h1>
-        <p>Lets render this to the DOM</p>
-    </div>
+  <div>
+    <h1>Hello World</h1>
+    <p>Lets render this to the DOM</p>
+  </div>
 );
 // Add your code below this line
 // the dom render should be called after the jsx elements have been declared
