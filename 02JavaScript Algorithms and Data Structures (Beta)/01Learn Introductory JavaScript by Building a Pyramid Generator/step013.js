@@ -1,3 +1,6 @@
-let character = 'Hello';
-let count = 8;
-console.log(count + 1);
+// let professsion = 'teacher';
+// let age;
+// console.log(professsion);
+// console.log(age);
+
+// remove the above comments to pass this step challenge
